@@ -21,7 +21,17 @@
       <input type="number" id="edad"><br>
       <label>Ingrese su correo</label>
       <input type="email" id="correo"><br>
+<script>
+  function mostrarDatos() {
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const edad = document.getElementById('edad').value;
+    const correo = document.getElementById('correo').value;
 
+    const mensaje = `Nombre: ${nombre}\nApellido: ${apellido}\nEdad: ${edad}\nCorreo: ${correo}`;
+    alert(mensaje);
+  }
+</script>
       
   </body>
   <footer>
