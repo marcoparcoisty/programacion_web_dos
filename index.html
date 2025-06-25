@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>GOLABS</title>
-  </head>
-  <body>
-    <h1>GOLABS</h1>
-    <p>Es un emprendimiento de Coworking o espacios compartidos para trabajar </p>
-    <h3>Ofrecemos:</h3>
-    <ul>
-      <li>Salas compartidas</li>
-      <li>Salas individuales</li>
-      <li>Auditorios</li>
-    </ul>
-    <form>
-      <label>Ingrese su nombre</label>
-      <input type="text" id="nombre"><br>
-      <label>Ingrese su apellido</label>
-      <input type="text" id="apellido"><br>
-      <label>Ingrese su edad</label>
-      <input type="number" id="edad"><br>
-      <label>Ingrese su correo</label>
-      <input type="email" id="correo"><br>
-<script>
-  function mostrarDatos() {
-    const nombre = document.getElementById('nombre').value;
-    const apellido = document.getElementById('apellido').value;
-    const edad = document.getElementById('edad').value;
-    const correo = document.getElementById('correo').value;
 
-    const mensaje = `Nombre: ${nombre}\nApellido: ${apellido}\nEdad: ${edad}\nCorreo: ${correo}`;
-    alert(mensaje);
-  }
-</script>
-      
-  </body>
-  <footer>
+<head>
+  <title>GOLABS</title>
+</head>
+
+<body>
+  <h1>GOLABS</h1>
+  <p>Es un emprendimiento de Coworking o espacios compartidos para trabajar </p>
+  <h3>Ofrecemos:</h3>
+  <ul>
+    <li>Salas compartidas</li>
+    <li>Salas individuales</li>
+    <li>Auditorios</li>
+  </ul>
+  <form>
+    <label>Ingrese su nombre</label>
+    <input type="text" id="nombre"><br>
+    <label>Ingrese su apellido</label>
+    <input type="text" id="apellido"><br>
+    <label>Ingrese su edad</label>
+    <input type="number" id="edad"><br>
+    <label>Ingrese su correo</label>
+    <input type="email" id="correo"><br>
+    <button onclick="mostrarDatos()">Enviar</button>
+  </form>
     
-  </footer>
+    <script>
+      function mostrarDatos() {
+        const nombre = document.getElementById('nombre').value;
+        const apellido = document.getElementById('apellido').value;
+        const edad = document.getElementById('edad').value;
+        const correo = document.getElementById('correo').value;
+
+
+        alert(`Nombre: ${nombre}\nApellido: ${apellido}\nEdad: ${edad}\nCorreo: ${correo}`);
+      }
+    </script>
+
+</body>
+<footer>
+
+</footer>
+
 </html>
 
 
